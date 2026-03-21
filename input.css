@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "arcade";
+  src: url("./files/fonts/arcade_r.TTF");
+}
+
+@font-face {
+  font-family: "tommy";
+  src: url("./files/fonts/madetommyrounded_medium.otf");
+}
+
+@theme {
+  --font-arcade: "arcade"; 
+  --font-tommy: "tommy"; 
+  --color-cysc-green: #179563;
+  --color-cysc-gray: #393a3b;
+}
