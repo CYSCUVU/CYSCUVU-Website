@@ -8,6 +8,10 @@ const eventCategory = (name) => {
     return /\bclub\s+meeting\b/i.test(name) ? 'meeting' : 'event'
 }
 
+const displayTitle = (name) => name
+    .replace(/^\s*(?:\[(?:club\s+meeting|event)\]|(?:club\s+meeting|event)\b)\s*[:|–—-]?\s*/i, '')
+    .trim() || 'Untitled activity'
+
 const formatDate = (date) => new Intl.DateTimeFormat('en-US', {
     dateStyle: 'full',
     timeStyle: 'short',
@@ -34,7 +38,7 @@ const showEvents = (events) => {
         card.className = 'rounded-lg border border-white/10 p-6 sm:p-8'
 
         addText(card, 'p', 'font-tommy text-sm text-cysc-green', `${formatDate(event.start)} MT`)
-        addText(card, 'h2', 'mt-2 font-tommy text-2xl font-bold', event.name)
+        addText(card, 'h2', 'mt-2 font-tommy text-2xl font-bold', displayTitle(event.name))
 
         if (event.description) {
             addText(card, 'p', 'mt-3 whitespace-pre-line font-tommy leading-relaxed text-white/60', event.description)

@@ -17,7 +17,7 @@ Use these title conventions:
 - `[Club Meeting] Intro to Linux` → Future Meetings
 - `[Event] Fall CTF` → Future Events
 
-Matching ignores capitalization. Any title containing the words `club meeting` goes to Future Meetings, unless it starts with `[Event]`. All other titles go to Future Events. Titles are displayed as written in Discord. Each item appears on only one page, and its description provides the announcement details.
+Matching ignores capitalization. Any title containing the words `club meeting` goes to Future Meetings, unless it starts with `[Event]`. All other titles go to Future Events. Leading `[Club Meeting]`, `[Event]`, `Club Meeting:`, and `Event:` labels are hidden from website titles; the original Discord title still determines the page. Each item appears on only one page, and its description provides the announcement details.
 
 The GitHub workflow runs every 15 minutes and requires the repository secret `DISCORD_BOT_TOKEN` for a bot added to the club server. You can also run **Update Discord events** manually from GitHub Actions.
 
