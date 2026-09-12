@@ -1,0 +1,1 @@
+window.CYSCUVU_PAST_EVENTS = []

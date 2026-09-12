@@ -3,12 +3,15 @@ name: Update Discord events
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - events-data.js
+      - past-events-data.js
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: github-pages
@@ -25,12 +28,19 @@ jobs:
       - run: npm run update-events
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+      - name: Save event archive
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events-data.js past-events-data.js
+          git diff --cached --quiet || git commit -m "Update Discord events"
+          git push
       - run: npm ci
       - run: npm run build
       - name: Prepare public website files
         run: |
           mkdir _site
-          cp ./*.html output.css meetings.js events-data.js CNAME _site/
+          cp ./*.html output.css meetings.js events-data.js past-events.js past-events-data.js CNAME _site/
           cp -R files _site/files
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
