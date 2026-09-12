@@ -11,13 +11,19 @@
 </head>
 <body class="min-h-screen bg-black text-white">
     <div class="mx-auto flex min-h-screen max-w-6xl flex-col px-6 sm:px-10">
-        <header class="flex items-center justify-between border-b border-white/10 py-6">
+        <header class="flex flex-wrap items-center justify-between gap-5 border-b border-white/10 py-6">
             <a href="./" class="flex items-center gap-3" aria-label="CYSCUVU home">
                 <img class="h-10 w-10 object-contain" src="./files/CYSCUVU-Logo-Blank.png" alt="">
                 <span class="font-arcade text-sm tracking-wider text-cysc-green sm:text-base">CYSCUVU</span>
             </a>
 
-            <nav class="flex items-center gap-5 text-xl text-white/50" aria-label="Social links">
+            <nav class="flex flex-wrap items-center gap-x-5 gap-y-3 font-tommy text-sm text-white/60" aria-label="Main navigation">
+                <a class="transition-colors hover:text-cysc-green" href="./get-started.html">Get started</a>
+                <a class="transition-colors hover:text-cysc-green" href="./meetings.html">Future meetings</a>
+                <a class="transition-colors hover:text-cysc-green" href="./events.html">Future events</a>
+                <a class="transition-colors hover:text-cysc-green" href="./resources.html">Practice</a>
+                <a class="transition-colors hover:text-cysc-green" href="./certifications.html">Certifications</a>
+                <span class="hidden h-5 w-px bg-white/10 sm:block"></span>
                 <a class="transition-colors hover:text-cysc-green" href="https://discord.gg/kJw7UdGSF4" aria-label="Join CYSCUVU on Discord">
                     <i class="fab fa-discord" aria-hidden="true"></i>
                 </a>
@@ -49,6 +55,29 @@
                     Join the club
                     <i class="fab fa-discord" aria-hidden="true"></i>
                 </a>
+
+                <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    <a class="rounded-lg border border-white/10 p-5 font-tommy transition hover:border-cysc-green" href="./get-started.html">
+                        <span class="text-cysc-green">01</span>
+                        <h2 class="mt-3 text-lg font-bold">Get started</h2>
+                        <p class="mt-2 text-sm leading-relaxed text-white/50">Your first steps in the club.</p>
+                    </a>
+                    <a class="rounded-lg border border-white/10 p-5 font-tommy transition hover:border-cysc-green" href="./resources.html">
+                        <span class="text-cysc-green">02</span>
+                        <h2 class="mt-3 text-lg font-bold">Practice</h2>
+                        <p class="mt-2 text-sm leading-relaxed text-white/50">CTFs and hands-on labs.</p>
+                    </a>
+                    <a class="rounded-lg border border-white/10 p-5 font-tommy transition hover:border-cysc-green" href="./certifications.html">
+                        <span class="text-cysc-green">03</span>
+                        <h2 class="mt-3 text-lg font-bold">Certifications</h2>
+                        <p class="mt-2 text-sm leading-relaxed text-white/50">Study paths and materials.</p>
+                    </a>
+                    <a class="rounded-lg border border-white/10 p-5 font-tommy transition hover:border-cysc-green" href="./meetings.html">
+                        <span class="text-cysc-green">04</span>
+                        <h2 class="mt-3 text-lg font-bold">Future meetings</h2>
+                        <p class="mt-2 text-sm leading-relaxed text-white/50">See what the club is doing next.</p>
+                    </a>
+                </div>
             </section>
         </main>
 
