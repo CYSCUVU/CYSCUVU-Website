@@ -1,5 +1,12 @@
 const status = document.querySelector('#events-status')
 const list = document.querySelector('#events-list')
+const category = list.dataset.category
+const label = category === 'meeting' ? 'club meeting' : 'event'
+
+const eventCategory = (name) => {
+    if (/^\s*\[event\]/i.test(name)) return 'event'
+    return /\bclub\s+meeting\b/i.test(name) ? 'meeting' : 'event'
+}
 
 const formatDate = (date) => new Intl.DateTimeFormat('en-US', {
     dateStyle: 'full',
@@ -16,11 +23,11 @@ const addText = (parent, tag, classes, text) => {
 
 const showEvents = (events) => {
     if (!events.length) {
-        status.textContent = 'No upcoming meetings are posted yet. Check Discord for announcements.'
+        status.textContent = `No upcoming ${label}s are posted yet. Check Discord for announcements.`
         return
     }
 
-    status.textContent = `${events.length} upcoming ${events.length === 1 ? 'meeting' : 'meetings'}`
+    status.textContent = `${events.length} upcoming ${label}${events.length === 1 ? '' : 's'}`
 
     events.forEach((event) => {
         const card = document.createElement('article')
@@ -45,4 +52,4 @@ const showEvents = (events) => {
     })
 }
 
-showEvents(window.CYSCUVU_EVENTS || [])
+showEvents((window.CYSCUVU_EVENTS || []).filter((event) => eventCategory(event.name) === category))
