@@ -26,7 +26,7 @@ window.CYSCUVU_EVENTS = [
     "start": "2026-09-18T15:00:00+00:00",
     "end": "2026-09-18T20:00:00+00:00",
     "location": "https://www.linkedin.com/posts/bsidescache-cybersecurity-infoseccommunity-share-7487522911315009537-",
-    "userCount": 6,
+    "userCount": 7,
     "url": "https://discord.com/events/404096765340549120/1545861058848104508"
   },
   {
