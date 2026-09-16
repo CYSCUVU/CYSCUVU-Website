@@ -26,7 +26,7 @@ window.CYSCUVU_EVENTS = [
     "start": "2026-09-21T17:00:00+00:00",
     "end": "2026-09-21T17:55:00+00:00",
     "location": "SE 102 New Engineering Building",
-    "userCount": 1,
+    "userCount": 2,
     "url": "https://discord.com/events/404096765340549120/1549094750924054558"
   },
   {
