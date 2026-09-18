@@ -1,15 +1,5 @@
 window.CYSCUVU_EVENTS = [
   {
-    "id": "1545861058848104508",
-    "name": "Event: BSidesSLC",
-    "description": "The best part of BSides isn't just the talks—it's the people.\n\nBSidesCache brings together students, educators, security practitioners, researchers, engineers, recruiters, and technology leaders for a day of learning and collaboration.\n\nAnd because we believe cybersecurity education should be accessible:\n\n🎓 Students attend FREE.\n🎟️ General Admission is just $39.19.\n\nJoin us on September 18 in Logan and experience what makes the BSides community special.\n\nRegister today:\nhttps://lnkd.in/gu3PTB99",
-    "start": "2026-09-18T15:00:00+00:00",
-    "end": "2026-09-18T20:00:00+00:00",
-    "location": "https://www.linkedin.com/posts/bsidescache-cybersecurity-infoseccommunity-share-7487522911315009537-",
-    "userCount": 7,
-    "url": "https://discord.com/events/404096765340549120/1545861058848104508"
-  },
-  {
     "id": "1549094750924054558",
     "name": "Event: ABET Accreditation Meeting",
     "description": "Meeting for all Cybersecurity students for ABET accreditation. Email Kcrandall@uvu.edu if you can attend, food vouchers will be provided.",
