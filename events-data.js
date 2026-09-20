@@ -16,7 +16,7 @@ window.CYSCUVU_EVENTS = [
     "start": "2026-09-23T17:00:00+00:00",
     "end": "2026-09-23T20:45:00+00:00",
     "location": "https://uvu.joinhandshake.com/stu/events/2011259",
-    "userCount": 2,
+    "userCount": 3,
     "url": "https://discord.com/events/404096765340549120/1549922466879639612"
   },
   {
