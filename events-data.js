@@ -1,15 +1,5 @@
 window.CYSCUVU_EVENTS = [
   {
-    "id": "1549094750924054558",
-    "name": "Event: ABET Accreditation Meeting",
-    "description": "Meeting for all Cybersecurity students for ABET accreditation. Email Kcrandall@uvu.edu if you can attend, food vouchers will be provided.",
-    "start": "2026-09-21T17:00:00+00:00",
-    "end": "2026-09-21T17:55:00+00:00",
-    "location": "SE 102 New Engineering Building",
-    "userCount": 3,
-    "url": "https://discord.com/events/404096765340549120/1549094750924054558"
-  },
-  {
     "id": "1551449736928825344",
     "name": "Meeting: Lockpocking",
     "description": "Come learn about lock picking! If you have lock picking sets feel free to bring them.",
