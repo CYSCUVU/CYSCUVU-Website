@@ -1,15 +1,5 @@
 window.CYSCUVU_EVENTS = [
   {
-    "id": "1551449736928825344",
-    "name": "Meeting: Lockpocking",
-    "description": "Come learn about lock picking! If you have lock picking sets feel free to bring them.",
-    "start": "2026-09-23T00:30:00+00:00",
-    "end": "2026-09-23T01:30:00+00:00",
-    "location": "CS601",
-    "userCount": 2,
-    "url": "https://discord.com/events/404096765340549120/1551449736928825344"
-  },
-  {
     "id": "1549922466879639612",
     "name": "Event: Wavetronix Student Excursion",
     "description": "Join us for an exciting company excursion to Wavetronix. During this visit, students will receive a guided tour of Wavetronix facility, meet professionals, and have lunch at their restaurants.\n\nThis is a great chance to explore potential careers at Wavetronix. Transportation will be provided, lunch will be provided at Wavetronix, space is limited, so be sure to sign up early!\n\nMajors: Professional sales, Computer science, Engineering (Mechanical, Electrical, and Manufacturing) , and Culinary Arts.",
