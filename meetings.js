@@ -2,6 +2,12 @@ const status = document.querySelector('#events-status')
 const list = document.querySelector('#events-list')
 const category = list.dataset.category
 const label = category === 'meeting' ? 'club meeting' : 'event'
+const ticketedEvents = {
+    '1552356316742426696': {
+        eventbriteId: '2002248678697',
+        url: 'https://www.eventbrite.com/e/utah-valley-university-hackthebox-ctf-event-tickets-2002248678697'
+    }
+}
 
 const eventCategory = (name) => {
     if (/^\s*\[event\]/i.test(name)) return 'event'
@@ -51,7 +57,34 @@ const showEvents = (events) => {
         link.className = 'mt-6 inline-block rounded bg-cysc-green px-5 py-3 font-tommy font-bold text-black hover:bg-white'
         link.href = event.url
         link.textContent = 'View on Discord'
-        card.append(link)
+
+        const actions = document.createElement('div')
+        actions.className = 'mt-6'
+        actions.append(link)
+
+        const ticket = ticketedEvents[event.id]
+        if (ticket) {
+            const ticketButton = document.createElement('button')
+            ticketButton.id = `eventbrite-widget-modal-trigger-${ticket.eventbriteId}`
+            ticketButton.type = 'button'
+            ticketButton.className = 'inline-block rounded bg-cysc-green px-5 py-3 font-tommy font-bold text-black hover:bg-white'
+            ticketButton.textContent = 'Buy tickets'
+            actions.append(' ', ticketButton)
+
+            if (window.EBWidgets) {
+                window.EBWidgets.createWidget({
+                    widgetType: 'checkout',
+                    eventId: ticket.eventbriteId,
+                    modal: true,
+                    modalTriggerElementId: ticketButton.id,
+                    onOrderComplete: () => console.log('Order complete!')
+                })
+            } else {
+                ticketButton.addEventListener('click', () => window.open(ticket.url, '_blank', 'noopener,noreferrer'))
+            }
+        }
+
+        card.append(actions)
         list.append(card)
     })
 }
