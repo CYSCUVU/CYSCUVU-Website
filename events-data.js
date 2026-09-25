@@ -16,7 +16,7 @@ window.CYSCUVU_EVENTS = [
     "start": "2026-10-24T23:00:00+00:00",
     "end": "2026-10-25T03:00:00+00:00",
     "location": "UVU",
-    "userCount": 9,
+    "userCount": 10,
     "url": "https://discord.com/events/404096765340549120/1552356316742426696"
   }
 ]
