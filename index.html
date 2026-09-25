@@ -57,6 +57,19 @@
                     <i class="fab fa-discord" aria-hidden="true"></i>
                 </a>
 
+                <section class="mt-14 grid overflow-hidden rounded-lg border border-cysc-green/50 bg-white/5 md:grid-cols-2" aria-labelledby="htb-ctf-title">
+                    <img class="h-full w-full object-cover" src="./files/hackthebox-uvu-event-banner-official-logos.png" alt="Hack The Box and Utah Valley University">
+                    <div class="p-7 sm:p-10">
+                        <p class="font-tommy text-sm font-bold uppercase tracking-[0.25em] text-cysc-green">Featured event</p>
+                        <h2 id="htb-ctf-title" class="mt-3 font-arcade text-2xl leading-tight text-white sm:text-3xl">UVU Hack The Box CTF</h2>
+                        <p class="mt-5 font-tommy leading-relaxed text-white/70">Put your skills to the test, meet other cybersecurity students, and compete for the most points.</p>
+                        <div class="mt-7 flex flex-wrap gap-3">
+                            <button id="eventbrite-widget-modal-trigger-2002248678697" class="rounded bg-cysc-green px-5 py-3 font-tommy font-bold text-black transition hover:bg-white" type="button">Register for the CTF</button>
+                            <a class="rounded border border-white/20 px-5 py-3 font-tommy font-bold text-white transition hover:border-cysc-green hover:text-cysc-green" href="./events.html">Event details</a>
+                        </div>
+                    </div>
+                </section>
+
                 <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     <a class="rounded-lg border border-white/10 p-5 font-tommy transition hover:border-cysc-green" href="./get-started.html">
                         <span class="text-cysc-green">01</span>
@@ -96,5 +109,18 @@
             Cybersecurity Club at Utah Valley University
         </footer>
     </div>
+    <noscript>
+        <p class="mx-auto max-w-6xl px-6 pb-6 font-tommy text-sm text-white/60 sm:px-10"><a class="text-cysc-green hover:text-white" href="https://www.eventbrite.com/e/utah-valley-university-hackthebox-ctf-event-tickets-2002248678697" rel="noopener noreferrer" target="_blank">Register for the UVU Hack The Box CTF on Eventbrite</a></p>
+    </noscript>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    <script>
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '2002248678697',
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-2002248678697',
+            onOrderComplete: () => console.log('Order complete!')
+        })
+    </script>
 </body>
 </html>
