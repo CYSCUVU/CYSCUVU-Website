@@ -6,7 +6,7 @@ window.CYSCUVU_EVENTS = [
     "start": "2026-09-30T00:30:00+00:00",
     "end": "2026-09-30T01:30:00+00:00",
     "location": "CS 401",
-    "userCount": 6,
+    "userCount": 7,
     "url": "https://discord.com/events/404096765340549120/1553963625138364478"
   },
   {
