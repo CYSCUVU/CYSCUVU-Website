@@ -37,11 +37,21 @@ jobs:
           git push
       - run: npm ci
       - run: npm run build
+      - name: Retrieve private deployment assets
+        uses: actions/checkout@v4
+        with:
+          repository: CYSCUVU/private-assets
+          token: ${{ secrets.PRIVTAE_ACCESS_TOKEN }}
+          path: _private-assets
+          persist-credentials: false
       - name: Prepare public website files
         run: |
           mkdir _site
           cp ./*.html output.css meetings.js events-data.js past-events.js past-events-data.js CNAME _site/
           cp -R files _site/files
+          if [ -d _private-assets/site ]; then
+            cp -R _private-assets/site/. _site/
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
