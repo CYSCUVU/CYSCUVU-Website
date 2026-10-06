@@ -51,7 +51,7 @@ jobs:
       - name: Prepare public website files
         run: |
           mkdir _site
-          cp ./*.html output.css meetings.js events-data.js past-events.js past-events-data.js CNAME robots.txt _site/
+          cp ./*.html output.css meetings.js events-data.js past-events.js past-events-data.js CNAME clue-7f3c.txt _site/
           cp -R files _site/files
           if [ -d _private-assets/site ]; then
             cp -R _private-assets/site/. _site/
