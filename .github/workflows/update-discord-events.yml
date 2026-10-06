@@ -21,7 +21,7 @@ jobs:
   update-events:
     runs-on: ubuntu-latest
     env:
-      PRIVATE_ASSETS_TOKEN: ${{ secrets.PRIVTAE_ACCESS_TOKEN }}
+      PRIVATE_ASSETS_TOKEN: ${{ secrets.PRIVATE_ASSETS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
