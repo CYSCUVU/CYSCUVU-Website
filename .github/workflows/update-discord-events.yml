@@ -20,6 +20,8 @@ concurrency:
 jobs:
   update-events:
     runs-on: ubuntu-latest
+    env:
+      PRIVATE_ASSETS_TOKEN: ${{ secrets.PRIVTAE_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,10 +40,11 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Retrieve private deployment assets
+        if: ${{ env.PRIVATE_ASSETS_TOKEN != '' }}
         uses: actions/checkout@v4
         with:
           repository: CYSCUVU/private-assets
-          token: ${{ secrets.PRIVTAE_ACCESS_TOKEN }}
+          token: ${{ env.PRIVATE_ASSETS_TOKEN }}
           path: _private-assets
           persist-credentials: false
       - name: Prepare public website files
