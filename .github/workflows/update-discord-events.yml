@@ -41,6 +41,7 @@ jobs:
       - run: npm run build
       - name: Retrieve private deployment assets
         if: ${{ env.PRIVATE_ASSETS_TOKEN != '' }}
+        continue-on-error: true
         uses: actions/checkout@v4
         with:
           repository: CYSCUVU/private-assets
