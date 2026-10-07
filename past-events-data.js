@@ -1,5 +1,15 @@
 window.CYSCUVU_PAST_EVENTS = [
   {
+    "id": "1556847912439517245",
+    "name": "Event: UVU Career and Internship Fair",
+    "description": "Great opportunity to connect and network with exceptional employers from America First Credit Union, Buckle, Goldman Sachs, Intermountain Health, Sundance Mountain, and more!",
+    "start": "2026-10-07T16:00:00+00:00",
+    "end": "2026-10-07T21:00:00+00:00",
+    "location": "UVU Grand Ballroom",
+    "userCount": 1,
+    "url": "https://discord.com/events/404096765340549120/1556847912439517245"
+  },
+  {
     "id": "1556846904640274532",
     "name": "Meeting: Adobe Internship Program + CCDC War Stories",
     "description": "UVU Alumni working at Adobe\nA UVU alum and member of the original Cybersecurity Club, he'll be sharing his experience working in a large security company, and some fun war stories from his time on the CCDC red team. Don't miss it!\nCome with questions, and bring a friend!",
