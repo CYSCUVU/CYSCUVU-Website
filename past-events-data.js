@@ -1,5 +1,15 @@
 window.CYSCUVU_PAST_EVENTS = [
   {
+    "id": "1556846904640274532",
+    "name": "Meeting: Adobe Internship Program + CCDC War Stories",
+    "description": "UVU Alumni working at Adobe\nA UVU alum and member of the original Cybersecurity Club, he'll be sharing his experience working in a large security company, and some fun war stories from his time on the CCDC red team. Don't miss it!\nCome with questions, and bring a friend!",
+    "start": "2026-10-07T00:30:00+00:00",
+    "end": "2026-10-07T01:30:00+00:00",
+    "location": "CS401",
+    "userCount": 2,
+    "url": "https://discord.com/events/404096765340549120/1556846904640274532"
+  },
+  {
     "id": "1545861337710727289",
     "name": "Event: UVU | Fall 2026 STEM Career & Internship Fair",
     "description": "Come and be a part of the FALL 2026 STEM CAREER & INTERNSHIP FAIR, specially designed for students like you!\n\nWhether you are a senior or a freshman, this event is an incredible chance to engage with numerous outstanding companies that will be on-campus, actively seeking candidates for both full-time career opportunities and internships. This fair brings together recruit",
