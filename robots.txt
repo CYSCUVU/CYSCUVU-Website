@@ -1,4 +1,0 @@
-User-agent: *
-
-# Flight manifest: L2ZpbGVzL2NhY2hlL2ZsaWdodC1sZXZlbC53ZWJw
-# Read between the pixels. Start with red.
