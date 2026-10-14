@@ -1,15 +1,5 @@
 window.CYSCUVU_EVENTS = [
   {
-    "id": "1556847368853393408",
-    "name": "Meeting: AI CTF",
-    "description": "Come try out a CTF built by Jeff for BSides! Come ready to learn how ai red teaming works!",
-    "start": "2026-10-14T00:30:00+00:00",
-    "end": "2026-10-14T01:30:00+00:00",
-    "location": "CS401",
-    "userCount": 4,
-    "url": "https://discord.com/events/404096765340549120/1556847368853393408"
-  },
-  {
     "id": "1559635979067990177",
     "name": "Firewalls",
     "description": "Come and learn all about Firewalls from Derek!",
